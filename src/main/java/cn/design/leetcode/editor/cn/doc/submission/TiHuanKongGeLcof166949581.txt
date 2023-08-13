@@ -1,0 +1,15 @@
+class Solution {
+    public String replaceSpace(String s) {
+        String s1="";
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)==' '){
+                s1+="%20";
+            }else{
+                s1+=s.charAt(i);
+            }
+        }
+        return s1;
+    }
+}
+//runtime:8 ms
+//memory:38.2 MB
